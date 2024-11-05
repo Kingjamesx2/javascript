@@ -1,12 +1,11 @@
 const data = document.querySelector("#data");
-const qr = document.querySelector("#qr");
+const qr = document.querySelector("#qr")
 
 data.addEventListener("keyup", e =>{
     if(e.code === "Enter"){
         qr.innerHTML = "";
         const href = data.value;
-        //size of image
-        const size = 360;
+        const size = 280;
 
         new QRCode(qr, {
             text: href,
